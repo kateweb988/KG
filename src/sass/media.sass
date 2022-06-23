@@ -1,0 +1,197 @@
+@media screen and (max-width: 1199px) 
+   .content__block
+      padding: 34px 132px 42px
+   .content-table tr
+      border-bottom: 1px solid #EFEFEF
+      td 
+         padding: 20px 10px !important
+         border-left: none !important
+         border-right: none !important
+         border-top: none !important
+         font-size: 12px
+   .adaptive-table td:last-child
+      margin-left: 0
+   td[data-label="ХЭШ Транзакции"] 
+      flex-direction: column
+      align-items: center 
+      justify-content: center
+      &:before 
+         margin-right: 0 !important
+         margin-bottom: 5px
+   .content-table tr:last-child
+      border: 1px solid #EFEFEF
+   .adaptive-table td:last-child
+      border-bottom: none
+@media ( max-width: 991px )
+   .content__block 
+      padding: 34px 57px 42px
+   .content__item:nth-child(2):before
+      left: -47px
+   .content__item:nth-child(2):after
+      right: -43px
+   .adaptive-table tr
+      width: 45%
+   h1 
+      font-size: 28px
+@media screen and (max-width: 767px)
+   .content__block
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      text-align: center
+   .content__item
+      flex-direction: column
+      margin-bottom: 15px
+      &:nth-child(3)
+         margin-bottom: 0
+   .content__icon 
+      margin-right: 0
+      margin-bottom: 5px
+   .content__item:nth-child(2):before, .content__item:nth-child(2):after
+      display: none
+   .content__fig1, .content__fig2
+      top: 50%
+      margin-top: -45px
+   .adaptive-table tr
+      width: 100%
+   .content-nav
+      margin-top: 15px
+@media screen and (max-width: 576px)
+   input, textarea, select 
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .burger 
+      position: fixed
+      flex-direction: column
+      right: -150%
+      top: 0px
+      z-index: 100000
+      display: flex
+      box-sizing: border-box
+      transition: .3s all ease-in-out
+      width: auto
+      height: auto
+      background-color: #000c28
+   .burger.active 
+      right: 0px
+      top: 0px
+      max-width: 100%
+      padding: 70px 30px
+      height: 100vh
+      width: 100%
+      .nav__info 
+         display: block !important
+   .menu 
+      display: flex
+      position: relative
+      top: 8px
+      right: 0px
+   .menu .button 
+      position: relative
+      display: flex
+      z-index: 1000000
+      right: -8px
+      top: -8px
+      width: 40px
+      height: 19px
+      align-items: center
+      justify-content: center
+      margin-left: auto
+   .menu .button.active 
+      position: fixed
+      right: 15px
+      top: 25px
+   .menu .button span 
+      position: absolute
+      top: calc(50% - 1px)
+      transition: .3s all ease-in-out
+      width: 24px
+      height: 3px
+      border-radius: 1px
+      background-color: $orange
+   .menu .button span::before 
+      content: ''
+      position: absolute
+      top: -8px
+      transition: .3s all ease-in-out
+      width: 24px
+      height: 3px
+      border-radius: 1px
+      background-color: $orange
+   .menu .button span::after 
+      content: ''
+      position: absolute
+      bottom: -8px
+      transition: .3s all ease-in-out
+      width: 24px
+      height: 3px
+      border-radius: 1px
+      background-color: $orange
+   .menu .button.active span 
+      background-color: transparent !important
+      width: 24px
+   .menu .button.active span::before 
+      content: ''
+      width: 24px
+      top: calc(50% - 2px)
+      transform: rotate(45deg)
+   .menu .button.active span::after 
+      content: ''
+      bottom: calc(50% - 1px)
+      transform: rotate(-44deg)
+      background-color: $orange
+      width: 24px
+   .burger .nav__list 
+      display: block !important
+      text-align: center
+      max-width: 100%
+      a 
+         text-align: center
+         margin-bottom: 20px
+         display: block
+   .nav__info
+      display: none
+   .nav 
+      padding: 15px 0
+   .header__input
+      padding-left: 12px
+      font-size: 12px
+   h1 
+      font-size: 27px
+      line-height: 35px
+   .header__name 
+      font-size: 14px
+      margin-top: 10px
+   .content__wrap 
+      padding: 23px 10px 37px
+   .adaptive-table tr
+      margin: 0px 0 20px
+      &:last-child
+         margin-bottom: 0
+   .content-nav 
+      width: 100%
+      justify-content: center
+      margin-top: -15px
+   .content-nav__first, .content-nav__last
+      font-size: 12px
+   .footer 
+      padding: 20px 0
+      &__box 
+         flex-direction: column
+   .footer__text
+      margin-top: 10px
+   .nav__list li
+      margin-right: 0   
+      a 
+         margin-bottom: 0 !important
+   .main_submenu
+      margin-right: -38px
+   .lang_select:hover .main_submenu--list 
+      transform: translateX(-56%) translateY(-31%)
+   .nav__lan 
+      margin-left: 0
+      justify-content: center
+      margin-top: 27px
+      li:first-child 
+         margin-left: 0
