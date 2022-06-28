@@ -198,6 +198,7 @@
                color: $yellow
          a 
             color: #FFFFFF
+            padding: 10px 5px
    &__box 
       justify-content: space-between
       align-items: center
@@ -221,6 +222,7 @@
             margin-right: 0
          a 
             color: #FFFFFF
+            padding: 10px
 .header
    background: $black
    overflow: visible
@@ -575,6 +577,8 @@ input:-moz-placeholder
    margin: 25px auto 0
    align-items: center
    justify-content: center
+   &__list 
+      align-items: center
    &__first 
       color: $black
       margin-right: 18px
@@ -589,16 +593,23 @@ input:-moz-placeholder
       height: 30px
       background: transparent
       border-radius: 5px
+      padding: 5px
       &:last-child 
          width: auto
       a 
          color: $black
+         width: 100%
+         height: 100%
+         display: flex
+         align-items: center
+         justify-content: center
          &:hover
             color: $orange
       &.active 
          background: $orange
          width: 30px
          margin-right: 5px
+         padding: 0
          a 
             font-weight: 700
             color: #FFFFFF

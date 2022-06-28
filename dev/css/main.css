@@ -499,7 +499,8 @@ div {
       .nav__lan li.active a {
         color: #F39D2E; }
       .nav__lan li a {
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        padding: 10px 5px; }
   .nav__box {
     justify-content: space-between;
     align-items: center; }
@@ -521,7 +522,8 @@ div {
       .nav__list li:last-child {
         margin-right: 0; }
       .nav__list li a {
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        padding: 10px; }
 
 .header {
   background: #232426;
@@ -882,6 +884,8 @@ input:-moz-placeholder {
   margin: 25px auto 0;
   align-items: center;
   justify-content: center; }
+  .content-nav__list {
+    align-items: center; }
   .content-nav__first {
     color: #232426;
     margin-right: 18px; }
@@ -895,17 +899,24 @@ input:-moz-placeholder {
     width: 20px;
     height: 30px;
     background: transparent;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 5px; }
     .content-nav__li:last-child {
       width: auto; }
     .content-nav__li a {
-      color: #232426; }
+      color: #232426;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .content-nav__li a:hover {
         color: #F35F26; }
     .content-nav__li.active {
       background: #F35F26;
       width: 30px;
-      margin-right: 5px; }
+      margin-right: 5px;
+      padding: 0; }
       .content-nav__li.active a {
         font-weight: 700;
         color: #FFFFFF; }
@@ -1314,4 +1325,10 @@ td[data-label="Отправитель/Получатель"] .content-table__lin
   .content-table__link .icon {
     flex: 1 0 auto;
     max-width: 20px;
-    height: 22px; } }
+    height: 22px; }
+  .content-nav__li {
+    padding: 0; }
+  .content-nav__first {
+    margin-right: 10px; }
+  .content-nav__last {
+    margin-left: 10px; } }
